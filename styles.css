@@ -1,0 +1,665 @@
+@font-face {
+    font-family: 'Circe Bold';
+    src: url('./fonts/circe_bold.eot'); /* IE 9 Compatibility Mode */
+    src: url('./fonts/circe_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('./fonts/circe_bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/circe_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('./fonts/circe_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/circe_bold.svg#circe_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('./fonts/circe.eot'); /* IE 9 Compatibility Mode */
+    src: url('./fonts/circe.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('./fonts/circe.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/circe.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('./fonts/circe.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/circe.svg#circe') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+*, *:after, *:before {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ #root{
+     width: 100%;
+     background-image: url("img/root-background.jpg");
+     background-repeat: repeat;
+     background-size: cover;
+ }
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #1a1e22;
+    padding: 0 25%;
+}
+.headerContent{
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ .headerContent_logo img{
+     height: 35px;
+     cursor: pointer;
+ }
+ .headerContent_contacts{
+     display: flex;
+     flex-direction: row;
+ }
+ .headerContent_contacts__email{
+     margin-left: 30px;
+ }
+.headerContent i{
+    color: #62cc82;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.headerContent i:hover{
+    color: white;
+}
+.headerContent span{
+    color: white;
+    font-size: 14px;
+    font-family: Arial, serif;
+}
+.fa-phone{
+     transform: scale(-1,1);
+ }
+
+
+.content{
+    width: 50%;
+    margin: 0 25%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.elephantToy{
+    width: 100%;
+    height: 500px;
+    background-image: url("img/toy.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+ .elephantToy button{
+     display: block;
+     background: transparent;
+     color: white;
+     font-size: 20px;
+     border: white 6px solid;
+     padding: 10px 40px;
+     margin: 350px auto 0;
+     cursor: pointer;
+     font-family: "Circe Bold";
+ }
+ .elephantToy button:hover{
+     color: #62cc82;
+     border: #62cc82 6px solid;
+     background: rgba(255, 255, 255, 0.6);
+     box-shadow: #62cc82 0 0 15px;
+ }
+.saleContainer{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, serif;
+}
+.saleContainer_welcome{
+    color:  #362c2d;
+}
+.saleContainer_table{
+    border: #62cc82 2px dashed;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 80px;
+}
+.textCode{
+    color: #a6a6a6;
+}
+.saleCodeTable{
+    border: #62cc82 6px solid;
+    padding: 15px 70px;
+    font-size: 28px;
+    margin: 10px 0 25px;
+}
+.textIHavePromo{
+    color:  #362c2d;
+}
+.YouTubeContainer {
+    margin-top: 40px;
+    padding: 0 20px;
+    font-family: Arial, serif;
+}
+.YouTubeContainer_text{
+    color:  #362c2d;
+}
+.YouTubeContainer iframe {
+    width: 100%;
+    height: 450px;
+}
+.subscriptionContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 0;
+    width: 100%;
+}
+.subscriptionContainer_desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    color:  #362c2d;
+}
+.subscriptionContainer_desc__lotto{
+    padding-bottom: 30px;
+    font-family: Arial, serif;
+}
+.subscriptionContainer_desc__prize{
+    font-family: Arial, serif;
+}
+.subscriptionContainer_desc__socialNetwork{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    margin-right: 10px;
+    background: #fff;
+}
+ .social a {
+     width: inherit;
+     height: inherit;
+     transform: translateY(25%);
+     color: #fff;
+     font-size: 18px;
+ }
+ .facebook  {background: #3b5998; }
+ .instagram  {background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+ .youtube  {background: #c4302b; }
+ .pinterest  {background: red; }
+ .facebook:hover {background: #fff;}
+ .instagram:hover {background: #fff; }
+ .youtube:hover {background: #fff; }
+ .pinterest:hover {background: #fff; }
+ .facebook a:hover {color: #3b5998;}
+ .instagram a:hover {color: #dd19df;}
+ .youtube a:hover {color: #c4302b;}
+ .pinterest a:hover {color: red;}
+
+.subscriptionContainer_photo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscriptionContainer_photo img{
+    border: #f0f0e5 8px solid;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    height: 300px;
+}
+.likeAndCommentContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: Arial, serif;
+}
+.likeAndCommentContainer_text{
+    font-size: 32px;
+    color:  #362c2d;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+.likeAndCommentContainer_button{
+    background: #62cc82;
+    color: white;
+    font-family: Circe;
+    font-size: 20px;
+    border: white 6px solid;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+ .likeAndCommentContainer_button:hover {
+     background: white;
+     color: #62cc82;
+    box-shadow: #62cc82 0 0 5px;
+ }
+
+
+.footer{
+    width: 100%;
+    background-color: #dee7e1;
+    padding: 0 25% 30px;
+}
+.footer_desc{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_desc__copywriting{
+    width: 60%;
+    color: #7f8982;
+    font-family: Arial, serif;
+}
+.footer_desc__contacts{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+}
+.footer_desc__contacts a{
+    color: #62cc82;
+}
+ .footer_desc__contacts a:hover{
+     color: white;
+ }
+ .footer_mailing{
+    width: 100%;
+    padding: 0 20px;
+    color: #7f8982;
+    font-family: Arial, serif;
+}
+.footer_mailing a{
+    color: #62cc82;
+}
+
+
+@media(max-width:1200px){
+    .elephantToy{
+        height: 450px;
+    }
+    .elephantToy button{
+        margin-top: 300px;
+    }
+    .YouTubeContainer iframe {
+        height: 400px;
+    }
+    .likeAndCommentContainer_text{
+        font-size: 26px;
+    }
+    .footer_desc__copywriting{
+        font-size: 14px;
+    }
+    .footer_desc__contacts{
+        width: 30%;
+    }
+    .footer_mailing{
+        font-size: 14px;
+    }
+}
+@media(max-width:1000px){
+    .header{
+        height: 50px;
+    }
+    .headerContent{
+        padding: 10px 20px;
+    }
+    .headerContent_logo img{
+        height: 30px;
+    }
+    .headerContent i{
+        font-size: 14px;
+    }
+    .headerContent span{
+        font-size: 12px;
+    }
+    .headerContent_contacts__email{
+        margin-left: 20px;
+    }
+
+    .elephantToy{
+        height: 400px;
+    }
+    .elephantToy button{
+        font-size: 18px;
+        border: white 5px solid;
+        padding: 8px 40px;
+        margin: 250px auto 0;
+    }
+    .elephantToy button:hover{
+        border: #62cc82 5px solid;
+    }
+    .saleContainer_welcome h2{
+        font-size: 22px;
+    }
+    .saleContainer_welcome p{
+        font-size: 15px;
+    }
+    .saleContainer_table{
+        padding: 20px 70px;
+    }
+    .textCode{
+        font-size: 15px;
+    }
+    .saleCodeTable{
+        border: #62cc82 5px solid;
+        padding: 15px 70px;
+        font-size: 24px;
+        margin: 10px 0 15px;
+    }
+    .textIHavePromo{
+        font-size: 15px;
+    }
+    .YouTubeContainer {
+        margin-top: 25px;
+        padding: 0 20px;
+    }
+    .YouTubeContainer_text{
+        font-size: 15px;
+    }
+    .YouTubeContainer iframe {
+        height: 350px;
+    }
+    .subscriptionContainer{
+        padding: 0 20px;
+    }
+    .subscriptionContainer_desc{
+        padding-top: 30px;
+    }
+    .subscriptionContainer_desc__lotto{
+        padding-bottom: 25px;
+    }
+    .subscriptionContainer_desc__lotto h2{
+        font-size: 20px;
+    }
+    .subscriptionContainer_desc__prize{
+        font-size: 15px;
+    }
+    .subscriptionContainer_photo{
+        padding-top: 10px;
+    }
+    .subscriptionContainer_photo img{
+        border: #f0f0e5 7px solid;
+        height: 220px;
+    }
+    .likeAndCommentContainer{
+        margin: 25px auto;
+    }
+    .likeAndCommentContainer_text{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .likeAndCommentContainer_button{
+        font-size: 18px;
+        border: white 5px solid;
+        padding: 8px 40px;
+    }
+
+    .footer{
+        padding: 0 25% 20px;
+    }
+    .footer_desc__copywriting{
+        font-size: 12px;
+    }
+    .footer_desc__contacts{
+        width: 30%;
+        font-size: 24px;
+    }
+    .footer_mailing{
+        font-size: 12px;
+    }
+}
+@media(max-width:800px){
+    .header{
+        padding: 0 15%;
+    }
+    .elephantToy{
+        height: 370px;
+    }
+    .elephantToy button{
+        margin: 230px auto 0;
+    }
+    .content{
+        width: 70%;
+        margin: 0 15%;
+    }
+    .YouTubeContainer iframe {
+        height: 300px;
+    }
+    .footer{
+        padding: 0 15% 15px;
+    }
+}
+@media(max-width:600px){
+    .header{
+        height: 45px;
+    }
+    .headerContent{
+        padding: 8px 20px;
+    }
+    .headerContent i{
+        margin-right: 3px;
+    }
+    .headerContent_logo img{
+        height: 25px;
+    }
+    .headerContent i{
+        font-size: 12px;
+    }
+    .headerContent span{
+        font-size: 11px;
+    }
+    .headerContent_contacts__email{
+        margin-left: 15px;
+    }
+
+    .elephantToy{
+        height: 270px;
+    }
+    .elephantToy button{
+        font-size: 15px;
+        border: white 4px solid;
+        padding: 6px 35px;
+        margin: 180px auto 0;
+    }
+    .elephantToy button:hover{
+        border: #62cc82 4px solid;
+    }
+    .saleContainer_welcome h2{
+        font-size: 18px;
+    }
+    .saleContainer_welcome p{
+        font-size: 13px;
+    }
+    .saleContainer_table{
+        padding: 15px 60px;
+    }
+    .textCode{
+        font-size: 13px;
+    }
+    .saleCodeTable{
+        border: #62cc82 4px solid;
+        padding: 10px 60px;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .textIHavePromo{
+        font-size: 13px;
+    }
+    .YouTubeContainer {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    .YouTubeContainer_text{
+        font-size: 13px;
+    }
+    .YouTubeContainer iframe {
+        height: 250px;
+    }
+    .subscriptionContainer_desc{
+        padding-top: 20px;
+    }
+    .subscriptionContainer_desc__lotto{
+        padding-bottom: 20px;
+    }
+    .subscriptionContainer_desc__lotto h2{
+        font-size: 16px;
+    }
+    .subscriptionContainer_desc__prize{
+        font-size: 13px;
+    }
+    .social{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+    .social a {
+        font-size: 16px;
+    }
+    .subscriptionContainer_photo{
+        padding-top: 10px;
+    }
+    .subscriptionContainer_photo img{
+        border: #f0f0e5 6px solid;
+        height: 200px;
+    }
+    .likeAndCommentContainer{
+        margin: 20px auto;
+    }
+    .likeAndCommentContainer_text{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .likeAndCommentContainer_button{
+        font-size: 16px;
+        border: white 4px solid;
+        padding: 6px 35px;
+    }
+    .footer_desc__copywriting{
+        font-size: 10px;
+    }
+    .footer_desc__contacts{
+        font-size: 20px;
+    }
+    .footer_mailing{
+        font-size: 10px;
+    }
+}
+@media(max-width:500px){
+    .header{
+        padding: 0 10%;
+    }
+    .headerContent i{
+        margin-right: 2px;
+    }
+    .headerContent i{
+        font-size: 11px;
+    }
+    .headerContent span{
+        font-size: 10px;
+    }
+    .headerContent_contacts__email{
+        margin-left: 12px;
+    }
+    .content{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .elephantToy{
+        height: 250px;
+    }
+    .elephantToy button{
+        font-size: 14px;
+        padding: 5px 30px;
+        margin: 160px auto 0;
+    }
+    .saleContainer_welcome h2{
+        font-size: 16px;
+    }
+    .saleContainer_welcome p{
+        font-size: 11px;
+    }
+    .saleContainer_table{
+        padding: 12px 50px;
+    }
+    .textCode{
+        font-size: 11px;
+    }
+    .saleCodeTable{
+        padding: 8px 50px;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .textIHavePromo{
+        font-size: 11px;
+    }
+    .YouTubeContainer {
+        margin-top: 15px;
+        padding: 0 20px;
+    }
+    .YouTubeContainer_text{
+        font-size: 11px;
+    }
+    .YouTubeContainer iframe {
+        height: 200px;
+    }
+    .subscriptionContainer_desc{
+        padding-top: 15px;
+    }
+    .subscriptionContainer_desc__lotto{
+        padding-bottom: 15px;
+    }
+    .subscriptionContainer_desc__lotto h2{
+        font-size: 14px;
+    }
+    .subscriptionContainer_desc__prize{
+        font-size: 11px;
+    }
+
+    .subscriptionContainer_photo img{
+        border: #f0f0e5 5px solid;
+        height: 150px;
+    }
+    .likeAndCommentContainer{
+        margin: 15px auto;
+    }
+    .likeAndCommentContainer_text{
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .likeAndCommentContainer_button{
+        font-size: 14px;
+        padding: 5px 30px;
+    }
+    .footer{
+        padding: 0 10% 15px;
+    }
+    .footer_desc__copywriting{
+        font-size: 8px;
+    }
+    .footer_desc__contacts{
+        font-size: 16px;
+    }
+    .footer_mailing{
+        font-size: 8px;
+    }
+}
